@@ -1,0 +1,102 @@
+/* Main body styling */
+body{
+    margin: 40px;
+    background-color: orange;
+}
+#mainPanel{
+    background-color: orange;
+
+}
+
+#scoreAndTargetPanelBody{
+    margin-top: 20px; 
+    margin-right: 20px; 
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: orange;
+    /* border: 2px solid white; */
+}
+
+.dataPannels{
+    margin: 15px;
+}
+
+/* Jwels styling  */
+#jewelsPanel{
+    padding: 10px;
+    background-color:orange;
+    margin: 30px;
+    border: 2px solid black;
+}
+
+#jewelImagePanel{
+    background-color:orange;
+    text-align: center;
+}
+
+.jewelImages{
+    height: 200px;
+    width: 200px;
+}
+
+.jewelImage{
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    background-color: orange !important;
+}
+
+/* top panels */
+.dataPannels{
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    background: orange;
+    font-family: 'Merienda', cursive;
+
+}
+
+.dataPanelBody{
+    border: 2px solid black !important;
+    background: yellow;
+    color: black;
+}
+
+.dataPanelHeading{
+    border: 2px solid black !important;
+    background: yellow;
+    color: black;
+}
+
+/* Result Panels */
+#resultPanelBody{
+    padding: 40px;
+    height: 270px;
+    background-color: orange;
+    border: 2px solid white;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    color: white;
+
+}
+
+
+
+
+#resultPanelFooter{
+    background-color: orange;
+    text-align: right;
+}
+
+.btn-primary{
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    color:white;
+}
+
+.btn-success{
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    color:white;
+}

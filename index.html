@@ -1,0 +1,56 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <link href="styleshet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+         <!-- <div class="panel panel-default" id="mainPanel"> -->
+
+            <!-- <div class="panel panel-default" class ="scoreAndTargetPanel"> -->
+                <div class="panel-body" id ="scoreAndTargetPanelBody">
+                        <div class="panel col-lg-3 dataPannels" id="targetPointsPanel">
+                            <div class="panel-heading dataPanelHeading">Target </div>
+                            <div class="panel-body dataPanelBody" id="winningPoints"></div>
+                        </div>
+                        <div class="panel col-lg-3 dataPannels" id="yourPointsPanel">
+                            <div class="panel-heading dataPanelHeading">You Points</div>
+                            <div class="panel-body dataPanelBody" id="yourPoints"></div>
+                        </div>   
+                <!-- </div> -->
+                 </div>
+            <!-- </div> -->
+
+
+                <div class="panel panel-default" id="jewelsPanel">
+                    <div class="panel-body">
+                        <div class="panel col-lg-12" id="jewelImagePanel">
+                            <div class="panel-body" id="jewelsImages">
+                                <div class="jewelImage"></div>
+                                <div class="jewelImage"></div>
+                                <div class="jewelImage"></div>
+                                <div class="jewelImage"></div>
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+
+                <div class="cog-12" id="resultPanel" hidden>
+                    <div class="panel-body" id="resultPanelBody">
+                        <ul><span id="totalPlays" class="resultData"></span></ul>
+                        <ul><span id="yourWin" class="resultData"></span></ul>
+                        <ul><span id="yourLoss" class="resultData"></span></ul>
+                    </div>
+                    <div class="panel-footer" id="resultPanelFooter">
+                        <div class="btn btn-primary" id="playAgainButton">Play Again</div>
+                        <div class="btn btn-primary" id="resetButoon">Reset</div>
+
+                    </div>        
+                </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+</html> 
