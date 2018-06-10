@@ -128,5 +128,5 @@ function resetGame(){
     round = 00;
     points = 00;
     loss = 00;
-    wins=0;
+    win = 0;
 }
