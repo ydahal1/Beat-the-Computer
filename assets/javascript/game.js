@@ -1,7 +1,6 @@
 var images = ['assets/images/1.png', 'assets/images/2.png', 'assets/images/3.png', 'assets/images/4.png'];
-var options = [300, 100, 400, 50, 25, 5, 2];
+var options = [2, 1, 3, 5, 4, 10, 12];
 var points = 00;
-var winningPoints = 500;
 var win = 00;
 var loss = 00;
 var round = 00; 
@@ -10,7 +9,7 @@ var keyPunch = new Audio('assets/sounds/keypress.mp3');
 var errorSound = new Audio('assets/sounds/error.mp3');
 var correctSound = new Audio('assets/sounds/correct.wav');
 var betGame;
-
+var winningPoints = randomNumber();
 
 $(document).ready( function (){
     //Displays points plays, wins and losses
@@ -65,30 +64,35 @@ $('#resetButoon').click( function (){
     displayElements();
     $('#resultPanel').hide();
     $('#jewelsPanel').show();
-
 })
-
 // ############################## Functions ########################################
+function randomNumber(){
+     var number = Math.floor(Math.random()*(120-19+1)+19);
+     return number;
+    }
+
+
 function displayElements(){
     $('#winningPoints').text(winningPoints);
     $('#yourPoints').text(points);
     $('#totalPlays').text("Total Plays: " + round);
     $('#yourWin').text("Your Wins : " + win);
     $('#yourLoss').text("Your Losses: " + loss);
+    
 }
 
 function aWin(){
     win += 1;
     round += 1;
     $('.jewelImage').empty();
-    options = [300, 100, 400, 50, 25, 5, 245];
+    options = [2, 1, 3, 5, 4, 10, 12];
     displyCoins();
 }
 function aLoss(){
     loss += 1;
     round += 1; 
     $('.jewelImage').empty();
-    options = [300, 100, 400, 50, 25, 5, 2];
+    options = [2, 1, 3, 5, 4, 10, 12];
     displyCoins();
 }
 
@@ -122,6 +126,7 @@ function showResultPanel(betGame){
 
 function replayGame(){
     points = 00;
+    winningPoints = randomNumber();
 }
 
 function resetGame(){
@@ -129,4 +134,5 @@ function resetGame(){
     points = 00;
     loss = 00;
     win = 0;
+    winningPoints = randomNumber();
 }
